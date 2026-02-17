@@ -12,3 +12,5 @@
   # Disable smart detection - verified no actual secrets in repo or build output
   # This prevents false positives while still scanning for explicitly marked secrets
   SECRETS_SCAN_SMART_DETECTION_ENABLED = "false"
+  # Ignore placeholder env var names from Netlify UI
+  SECRETS_SCAN_OMIT_KEYS = "Name,Value"
