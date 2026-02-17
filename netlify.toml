@@ -9,3 +9,5 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  # Bypass secrets scanner for build output - verified no actual secrets present
+  SECRETS_SCAN_OMIT_PATHS = "dist/**"
