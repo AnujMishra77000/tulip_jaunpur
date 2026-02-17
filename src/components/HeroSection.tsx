@@ -100,16 +100,16 @@ export default function HeroSection() {
         {/* Premium CTA Buttons */}
         <AnimatedSection animation="fade-up" delay={800}>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <button className="group relative overflow-hidden bg-white text-red-600 px-10 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-white/25">
+            <a href="#contact" className="group relative overflow-hidden bg-white text-red-600 px-10 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-white/25">
               <span className="relative z-10">Book Appointment</span>
               <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 bg-white group-hover:bg-transparent transition-colors duration-500"></div>
               <span className="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-bold">Book Appointment</span>
-            </button>
-            <button className="group relative overflow-hidden border-3 border-white text-white px-10 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/25">
+            </a>
+            <a href="#contact" className="group relative overflow-hidden border-3 border-white text-white px-10 py-5 rounded-full font-bold text-xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/25">
               <span className="relative z-10 group-hover:text-red-600 transition-colors duration-500">Emergency Care</span>
               <div className="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            </button>
+            </a>
           </div>
         </AnimatedSection>
 
@@ -150,8 +150,8 @@ export default function HeroSection() {
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`relative overflow-hidden transition-all duration-500 ${index === currentSlide
-                    ? 'w-12 h-4 bg-white rounded-full'
-                    : 'w-4 h-4 bg-white/40 rounded-full hover:bg-white/60'
+                  ? 'w-12 h-4 bg-white rounded-full'
+                  : 'w-4 h-4 bg-white/40 rounded-full hover:bg-white/60'
                   }`}
               >
                 {index === currentSlide && (
